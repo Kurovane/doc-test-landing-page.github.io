@@ -447,6 +447,22 @@ font-family: Inter,DM Sans,Arial,sans-serif;
     .button{padding:12px 14px}
     .main-nav{font-size:10px}}
 
+
+    /*  header corregido*/
+    @media (max-width: 768px) {
+    header {
+        min-height: 80px;
+    }
+
+    #inicio {
+        scroll-margin-top: 80px;
+    }
+
+    main {
+        padding-top: 80px;
+    }
+}
+
 /* Botón flotante para volver al inicio */
 .btn-inicio {
     position: fixed;
