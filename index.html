@@ -100,7 +100,18 @@
               <span class="tag">CONSULTA</span></div>
               <h3>Infecciones y enfermedades genitales</h3>
               <p>VPH, condilomas, balanitis, herpes, clamidia y otras infecciones.</p>
-              <a href="#contacto">Consultar este servicio <span>↗</span></a></article>
+
+              <!-- Abrir ventana modal-->
+
+                <button classs="service-trigger" type="button" data-service="infecciones">
+                  <span>Consultar este servicio</span> 
+                  <span aria-hidden="true">↗</span>
+                </button>
+
+              </article>
+        
+
+
           
               <!-- servicio 2 -->
           <article class="service-card">
@@ -110,7 +121,9 @@
             </div>
             <h3>Riñones y vías urinarias</h3>
             <p>Cálculos, cistitis, infecciones urinarias y sangre en la orina.</p>
-            <a href="#contacto">Consultar este servicio <span>↗</span></a>
+                <button classs="service-trigger" type="button" data-service="rinones">Consultar este servicio <span aria-hidden="true">↗</span></button>
+
+                
           </article>
 
           <!-- servicio 3 -->
@@ -121,7 +134,7 @@
             </div>
             <h3>Próstata y salud masculina</h3>
             <p>Hiperplasia prostática, prostatitis y valoración del antígeno prostático.</p>
-            <a href="#contacto">Consultar este servicio <span>↗</span></a>
+                <button classs="service-trigger" type="button" data-service="prostata">Consultar este servicio <span aria-hidden="true">↗</span></button>
           </article>
 
           <!-- servicio 4 -->
@@ -132,7 +145,7 @@
             </div>
             <h3>Salud sexual y reproductiva</h3>
             <p>Infertilidad, disfunción eréctil, eyaculación precoz y varicocele.</p>
-            <a href="#contacto">Consultar este servicio <span>↗</span></a>
+                <button classs="service-trigger" type="button" data-service="salud-sexual">Consultar este servicio <span aria-hidden="true">↗</span></button>
           </article>
 
           <!-- servicio 5 -->
@@ -143,7 +156,7 @@
             </div>
             <h3>Uro-oncología</h3>
             <p>Evaluación de tumores y cáncer de riñón, próstata, vejiga, testículo y pene.</p>
-            <a href="#contacto">Consultar este servicio <span>↗</span></a>
+                <button classs="service-trigger" type="button" data-service="uro-oncologia">Consultar este servicio <span aria-hidden="true">↗</span></button>
           </article>
 
           <!-- servicio 6 -->
@@ -154,12 +167,34 @@
             </div>
             <h3>Cirugía, procedimientos y prevención</h3>
             <p>Circuncisión, vasectomía, fulguración, vacunación y check-ups.</p>
-            <a href="#contacto">Consultar este servicio <span>↗</span></a>
+                <button classs="service-trigger" type="button" data-service="cirugia">Consultar este servicio <span aria-hidden="true">↗</span></button>
           </article>
         </div>
         <div class="services-footer"><p>¿No sabes qué servicio necesitas? Cuéntanos el motivo de tu consulta.</p><a class="button button-light" href="#contacto">Contactar con la consulta <span>↗</span></a></div>
       </div>
     </section>
+
+<div class="service-modal" id="serviceModal" aria-hidden="true">
+  <div class="service-modal-content">
+
+    <button type="button" id="closeModal" class="modal-close">
+      &times;
+    </button>
+
+    <h2 id="modalTitle"></h2>
+
+    <p id="modalDescription"></p>
+
+    <h3>¿Qué incluye este servicio?</h3>
+
+    <ul id="modalDetails"></ul>
+
+    <a href="#" id="whatsappButton" target="_blank">
+      Agendar cita por WhatsApp
+    </a>
+
+  </div>
+</div>
 
 
     <section class="dark-section" id="consulta">

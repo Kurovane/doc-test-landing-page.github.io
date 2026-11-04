@@ -87,7 +87,7 @@ a{
     display:block;
     font-family:var(--serif);
     font-weight:500;
-    font-size:17px;
+    font-size:20px;
     line-height:1.25
 }
 
@@ -331,7 +331,7 @@ a{
     color:var(--blue)
 }
 .tag{
-    font-size:8px;
+    font-size:10px;
     letter-spacing:.08em;
     border:1px solid #dbe3e4;
     border-radius:4px;
@@ -352,7 +352,7 @@ a{
     justify-content:space-between;
     align-items:center;
     margin-top:auto;
-    font-size:10px;
+    font-size:15px;
     color:var(--blue);
     border-top:1px solid var(--line);
     padding-top:12px
@@ -730,7 +730,7 @@ font-family: Inter,DM Sans,Arial,sans-serif;
 @media(max-width:680px){
     .site-header{height:auto;padding:14px 0}
     .nav-wrap{flex-wrap:wrap}
-    .brand strong{font-size:15px}
+    .brand strong{font-size:20px}
     .main-nav{order:3;width:100%;justify-content:space-between;gap:8px;font-size:11px;padding-top:5px}
     .nav-cta{margin-left:auto;padding:11px 12px}
     .hero{padding:28px 0 30px}
@@ -842,4 +842,20 @@ html {
 
 .img-check {
     margin-top:7px
+}
+
+/* ESTILOS MODALES*/
+.service-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(15, 35, 45, 0.70);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.service-modal.active {
+  display: flex;
 }
