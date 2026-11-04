@@ -175,25 +175,38 @@
     </section>
 
 <div class="service-modal" id="serviceModal" aria-hidden="true">
-  <div class="service-modal-content">
+  <div class="service-modal-content" role="dialog" aria-modal="true">
 
-    <button type="button" id="closeModal" class="modal-close">
-      &times;
-    </button>
+  <button type="button" id="closeModal" class="modal-close">
+    &times;
+  </button>
 
-    <h2 id="modalTitle"></h2>
+  <span class="eyebrow">ESPECIALISTA EN UROLOGÍA</span>
 
-    <p id="modalDescription"></p>
+  <h2 id="modalTitle"></h2>
 
-    <h3>¿Qué incluye este servicio?</h3>
+  <p id="modalDescription"></p>
 
-    <ul id="modalDetails"></ul>
+  <h3>¿Qué problemas podemos atender?</h3>
+  <ul id="modalDetails"></ul>
 
-    <a href="#" id="whatsappButton" target="_blank">
-      Agendar cita por WhatsApp
-    </a>
+  <h3>¿Cuándo acudir a consulta?</h3>
+  <p id="modalWhen"></p>
 
-  </div>
+  <h3>¿Cómo es la valoración?</h3>
+  <p id="modalEvaluation"></p>
+
+  <p class="modal-note">
+    Cada paciente requiere una valoración individualizada.
+    Agenda una consulta para recibir orientación médica.
+  </p>
+
+  <a id="whatsappButton" href="#" target="_blank"
+     rel="noopener noreferrer">
+    Solicitar cita por WhatsApp ↗
+  </a>
+
+</div>
 </div>
 
 
