@@ -219,3 +219,5 @@ document.addEventListener("keydown", (event) => {
     closeModal();
   }
 });
+
+}); // Cierre de DOMContentLoaded
