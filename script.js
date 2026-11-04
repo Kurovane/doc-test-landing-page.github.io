@@ -195,3 +195,27 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   });
+
+  // Cerrar modal
+function closeModal() {
+  modal.classList.remove("active");
+  modal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+}
+
+// Botón X
+closeButton.addEventListener("click", closeModal);
+
+// Clic fuera del contenido
+modal.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    closeModal();
+  }
+});
+
+// Tecla Escape
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && modal.classList.contains("active")) {
+    closeModal();
+  }
+});
